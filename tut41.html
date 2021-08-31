@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript string function</title>
+    <style>
+        .container {
+            border: 2px solid green;
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo beatae exercitationem, officia,
+            doloremque vero molestiae fugit accusamus explicabo ab atque iste sunt magnam fuga doloribus dolore
+            asperiores rerum quidem!</p>
+    </div>
+    <script>
+        var str = "this is string";
+        console.log(str);
+        var position = str.indexOf('str');
+        console.log(position)
+
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        var substr1 = str.slice('1,4');
+        console.log(substr1)
+
+        var replaced = str.replace('string', 'tanveer');
+        // console.log(str)
+        console.log(replaced)
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstr = str.concat(" new string");
+        console.log(newstr)
+
+
+    </script>
+</body>
+
+</html>

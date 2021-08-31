@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>This is Html form</h2>
+    <!-- form tag me action dena hungaa jaha submit hunga form backend me -->
+    <form action="backend.php">
+        <label for="Name">Name</label>
+        <div>
+            <!-- input tag user type any text information -->
+            <input type="text" name="Myname" id="Name">
+        </div><br>
+        <label for="Roll No">Roll No</label>
+        <div>
+            <input type="text" name="My Roll No" id="Roll No">
+        </div><br>
+        <label for="Email">Email</label>
+        <div>
+            <input type="text" name="My Email" id="Email">
+        </div><br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="date of birth" id="date">
+        </div><br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name=" Mybonus" id="bonus">
+        </div><br>
+        <label for="My Eligibility">Are You Eligible</label>
+        <div>
+            <!-- input tag in type of checkbox create check box -->
+            <input type="checkbox" name="checkbox" id="My Eligibility">
+        </div><br>
+        <label for="gender">Gender</label>
+        <div>
+            Male <input type="radio" name="Mygender" id="gender"> FeMale <input type="radio" name="Mygender" id="gender"> Other <input type="radio" name="Mygender" id="gender">
+            <div><br>
+                <div><br> Write Something About Yourself : <br><textarea name="My text" id="" cols="30" rows="10"></textarea>
+                </div><br>
+                <div>
+                    <label for="Car">cars</label>
+                    <select name="Mycar" id="Car">
+                        <option value="fortunare">Fortunare</option>
+                        <option value="aud">Audi</option>
+                        <option value="cret">Creata</option>
+                    </select>
+                </div><br>
+
+                <input type="button" value="Submit Now">
+            </div><br>
+            <div>
+                <input type="Reset" value="Reset Now">
+            </div><br>
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

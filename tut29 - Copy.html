@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes And Animation</title>
+    <style>
+        .container {
+            background-color: chartreuse;
+        }
+
+        .box {
+            background-color: brown;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: tanveer1; */
+            animation-name: tanveer2;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in; */
+            /* animation-delay: 2s; */
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes tanveer2 {
+            0% {
+                /* background-color: cornflowerblue; */
+                /* width: 0%; */
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                /* background-color: darkblue; */
+                /* width: 25%; */
+                top: 0px;
+                left: 250px;
+            }
+
+            50% {
+                /* background-color: darkorange;
+                width: 50%; */
+                top: 250px;
+                left: 250px;
+
+            }
+
+            75% {
+                /* background-color: deeppink; */
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                /* background-color: indigo; */
+                /* width: 100%; */
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        @keyframes tanveer1 {
+            from {
+                width: 300px;
+                height: 450px;
+                /* background-color: chocolate; */
+            }
+
+            to {
+                width: 1000px;
+                height: 500px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This Is A Box </div>
+    </div>
+</body>
+
+</html>

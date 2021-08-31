@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 550px;
+            border: 2px solid black;
+            /* initialize flex for flexbox */
+            display: flex;
+
+            /* bydefault is flex row */
+            /* flex: row; */
+
+            /* start with right hand side row */
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+
+            /* wrap is respons to adjust */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            flex-flow: row wrap;
+
+            /* justify-content is horizontal center to content  */
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: center;
+
+            /* text align is vertically center to content */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+
+        }
+
+        .item {
+            width: 100px;
+            height: 150px;
+            background-color: tomato;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid turquoise;
+        }
+
+        /* flex properties for flex item */
+
+        #item-1 {
+            /* higher order later show up  in the container */
+            /* order: 8; */
+
+            /* flex grow properties is large grow */
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+
+
+            /* flex-basis: 250px; */
+            /* when flex direction is set to row flex-basis control width */
+            /* when flex direction is set to colum  flex-basis control height */
+        }
+
+        #item-2 {
+            /* flex-grow  is the  create long space  compare to other */
+            flex-grow: 4;
+
+            /* flex shrink is create small space compare to other */
+            flex-shrink: 5;
+
+        }
+
+        #item-3 {
+            /* higher order later show up  in the container */
+            /* order: 5; */
+
+            /* short hand  */
+            /*flex-grow,flex-shrink,flex-basis */
+            /* flex: 3 5 350px; */
+
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+            /* align-self: center; */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is Flexbox</h3>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Five Box</div>
+        <div class="item" id="item-6">Six Box</div> -->
+    </div>
+</body>
+
+</html>

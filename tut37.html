@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid media quiries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media (min-width:0px) and (max-width:2500px) {
+            body {
+                background-color: aqua;
+            }
+
+        }
+
+        @media (min-width:2500px) and (max-width:500px) {
+            body {
+                background-color: rgb(37, 163, 69);
+            }
+
+        }
+
+        @media (min-width:500px) and (max-width:750px) {
+            body {
+                background-color: rgb(192, 189, 17);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+        }
+
+        @media (min-width:750px) and (max-width:1000px) {
+            body {
+                background-color: rgb(133, 22, 28);
+            }
+
+        }
+
+        .bdr {
+            border: 2px solid green;
+            padding: 10px 25px;
+            background-color: grey;
+        }
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            Home About Contact
+        </nav>
+        <section class="bdr">
+            <h2>
+                Learn css in Hindi
+            </h2>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+        <footer class="bdr">copy right codewithveer 2021</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical 5</title>
+    <style>
+        td {
+            padding: 12px;
+            margin: 20px;
+        }
+
+        .tbl2 {
+            margin: 12px;
+        }
+
+        td {
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+                background-color: greenyellow;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table</h2>
+    <table border="2px solid green">
+        <tr>
+            <td>Name</td>
+            <td>Roll No</td>
+            <td>Marks</td>
+        </tr>
+        <tr>
+            <td>Mayur</td>
+            <td>45</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>Rajat</td>
+            <td>20</td>
+            <td>550</td>
+        </tr>
+        <tr>
+            <td>Adnan</td>
+            <td>21</td>
+            <td>535</td>
+        </tr>
+    </table>
+    <table class="tbl2" border="2px solid green">
+        <tr>
+            <td>Item Name</td>
+            <td>Quantity</td>
+            <td>Price</td>
+            <td>Estimation</td>
+        </tr>
+        <tr>
+            <td>Soap</td>
+            <td>2</td>
+            <td>200</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Face Wash</td>
+            <td>10</td>
+            <td>50</td>
+            <td>2000</td>
+        </tr>
+    </table>
+</body>
+
+</html>

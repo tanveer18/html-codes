@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .cart {
+            padding: 20px 25px;
+            border: 3px solid cyan;
+            margin: 20px 25px;
+            background-color: salmon;
+            /* box shadow offset x offset y  color */
+            box-shadow: 10px 10px  rgb(116, 84, 26);
+
+            
+            /* box shadow offset x offset y  blur-redius color  */
+            box-shadow: 10px 10px 7px orange;
+
+
+            /* box shadow offset x offset y  blur-redius rgba(rgb alpha to control dark and light)  */
+            /* box-shadow: 10px 10px 7px rgba(10, 0.5, 10.5, 8.50); */
+        }
+        .container h3{
+            text-shadow: 16px 8px rgb(49, 21, 7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cart" id="car-1">
+            <h3>cart-1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam aliquam odit beatae temporibus porro a,
+                sunt consequatur recusandae amet culpa, aut voluptatum cumque excepturi perferendis perspiciatis nisi ea
+                rerum esse quod. Laboriosam eveniet tempore et accusantium velit expedita nemo maxime!</p>
+        </div>
+        <div class="cart" id="car-2">
+            <h3>cart-2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam aliquam odit beatae temporibus porro a,
+                sunt consequatur recusandae amet culpa, aut voluptatum cumque excepturi perferendis perspiciatis nisi ea
+                rerum esse quod. Laboriosam eveniet tempore et accusantium velit expedita nemo maxime!</p>
+        </div>
+        <div class="cart" id="car-3">
+            <h3>cart-3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam aliquam odit beatae temporibus porro a,
+                sunt consequatur recusandae amet culpa, aut voluptatum cumque excepturi perferendis perspiciatis nisi ea
+                rerum esse quod. Laboriosam eveniet tempore et accusantium velit expedita nemo maxime!</p>
+        </div>
+    </div>
+</body>
+
+</html>

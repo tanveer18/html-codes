@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        p {
+            border: 3px solid black;
+        }
+
+        /* This is a id selector because # simbol */
+        #firstpara {
+            color: yellowgreen
+        }
+
+        /* This is a class selector because . simbol */
+
+        .bgblue {
+            color: purple;
+            background-color: royalblue;
+        }
+
+        /* This is element selector */
+        p {
+            color: darkslateblue;
+            background-color: dimgray;
+        }
+
+        /* This is grouping selector because target is 2 elements simbol */
+
+        footer,
+        span {
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Css Selector</h4>
+    <p id="firstpara">This is a paragraph for demontrates css selector</p>
+    <p id="redelement" class="redelement bgblue">This is another paragraph for demontrates css selector</p>
+    <p>This is one again another paragraph for demontrates css selector</p>
+    <footer>This is footer </footer>
+    <span>This is a span</span>
+</body>
+
+</html>

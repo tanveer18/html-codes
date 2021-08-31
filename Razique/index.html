@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join BDC College</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Css Reset */
+    
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('gym2.jpg');
+        color: black;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    
+    .left img {
+        width: 110px;
+    }
+    
+    .left div {
+        text-align: center;
+    }
+    
+    .btn {
+        margin: 5px 3px;
+        padding: 4px 8px;
+        background-color: black;
+        color: blanchedalmond;
+        /* border: grey; */
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    
+    .btn:hover {
+        background-color: rgb(141, 112, 120);
+    }
+    
+    .left {
+        display: inline-block;
+        /* border: 2px solid grey; */
+        position: absolute;
+        left: 44px;
+        top: 20px;
+        font-size: 17px;
+    }
+    
+    .mid {
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+        /* border: 2px solid grey; */
+    }
+    
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: block;
+        /* border: 2px solid grey; */
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+    
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        background-color: lavenderblush;
+        border-radius: 15px;
+    }
+    
+    .container {
+        /* border: 2px solid black; */
+        width: 290px;
+        margin: 36px -20px;
+        padding: 19px 66px;
+        border-radius: 15px;
+    }
+    
+    .form-group input {
+        text-align: center;
+        width: 300px;
+        display: block;
+        margin: 10px 4px;
+        padding: 5px;
+        border-radius: 8px;
+        /* border: 2px solid black; */
+        font-size: 15px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    
+    .container button {
+        display: block;
+        margin: 30px auto;
+        width: 318px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- right for box is logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div></div>
+
+        </div>
+        <!-- mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Uss</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right"><button class="btn">Call Uss Now</button><button class="btn">Email Now</button>
+
+        </div>
+        <div class="container">
+            <h1>BDC College Amravati</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your city">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your email">
+                </div>
+                <button class="btn">Submit</button>
+        </div>
+
+        </form>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selector </title>
+    <style>
+        h1 {
+            text-align: center;
+            color: firebrick;
+            font-weight: bold;
+            background-color: silver;
+        }
+
+        /* greater then simbol means is direct target p div in */
+        div > p {
+            background-color: green;
+            font-weight: italic;
+            color: white
+        }
+
+        /* plus sign is sibling his tell jiska pichla paragraph div hu uspe ye properties lago hu */
+        div+p {
+            background-color: indigo;
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This Is Heading</h1>
+    <div class="container">
+        <div class="row">
+            <p>This Is A paragraph</p>
+            <!-- greaterthan simbol mean div direct paragraph terget him -->
+            <li>
+                <p>this is inside paragraph</p>
+            </li>
+        </div>
+        <p>This Is Another paragraph</p>
+    </div>
+    <p>This Is Outermost paragraph</p>
+</body>
+
+</html>
